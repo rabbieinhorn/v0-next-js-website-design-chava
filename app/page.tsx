@@ -64,7 +64,7 @@ const timelineSteps = [
   {
     step: '03',
     title: 'Daily Regulation Protocols',
-    description: 'Structured practices with business-hours messaging support.',
+    description: 'Structured practices for sustained regulation.',
   },
   {
     step: '04',
@@ -77,8 +77,8 @@ const selectedWork = [
   {
     title: 'Book',
     subtitle: "Everything's Gonna Be Okay: How to Nurture Yourself During a Storm",
-    description: 'A framework for pattern recognition and self-regulation so leaders can access clarity when the stakes are highest.',
-    href: '/media',
+    description: 'A funny, joyful, raw journey through fear, anxiety, and grief\u2014showing how to nurture yourself through challenging times with humor and grace.',
+    href: 'https://www.amazon.com/Everythings-Going-Be-Okay-Yourself-ebook/dp/B0BWF3KTD1',
     aspectRatio: 'aspect-[2/3]',
     cta: 'View',
   },
@@ -291,12 +291,23 @@ export default function HomePage() {
                 <p className="mt-2 text-sm leading-relaxed text-[#7A776F]">
                   {work.description}
                 </p>
-                <Link
-                  href={work.href}
-                  className="mt-3 text-sm text-[#5A5852] hover:text-foreground transition-colors"
-                >
-                  {work.cta}
-                </Link>
+                {work.href.startsWith('http') ? (
+                  <a
+                    href={work.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 text-sm text-[#5A5852] hover:text-foreground transition-colors"
+                  >
+                    {work.cta}
+                  </a>
+                ) : (
+                  <Link
+                    href={work.href}
+                    className="mt-3 text-sm text-[#5A5852] hover:text-foreground transition-colors"
+                  >
+                    {work.cta}
+                  </Link>
+                )}
               </div>
             ))}
           </div>

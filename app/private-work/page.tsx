@@ -13,7 +13,7 @@ import {
 import { Check, Info } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Private Work | Chava Floryn',
+  title: 'Performance Strategy for Business Leaders | Chava Floryn',
   description: 'Confidential, time-bound intervention for leaders navigating high-stakes transitions.',
 }
 
@@ -21,7 +21,6 @@ const intensiveIncludes = [
   '4 private sessions (Zoom)',
   'Baseline assessment + goal definition',
   'Daily regulation protocol (5–15 minutes/day)',
-  'Business-hours messaging support (Mon–Fri, 9am–1pm)',
   'Integration plan after each session',
 ]
 
@@ -67,7 +66,7 @@ export default function PrivateWorkPage() {
       <section className="px-6 py-24 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Private Work
+            Performance Strategy for Business Leaders
           </h1>
           <p className="mt-6 text-base leading-relaxed text-[#5A5852] sm:text-lg">
             Confidential, time-bound intervention for leaders navigating high-stakes transitions.
