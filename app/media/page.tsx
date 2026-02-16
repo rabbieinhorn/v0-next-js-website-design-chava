@@ -60,11 +60,11 @@ export default function MediaPage() {
                   Everything's Gonna Be Okay: How to Nurture Yourself During a Storm
                 </h3>
                 <p className="mt-2 text-[13px] leading-[1.7] text-[#5A5852]">
-                  For leaders navigating uncertainty, this book explores how to recognize internal patterns, regulate pressure, and lead with clarity when it matters most.
+                  A funny, joyful, raw journey through fear, anxiety, and grief. Host of the Nurture Series Podcast, Chava shows us how to nurture our best selves through challenging times with humor and grace -- a roadmap for getting through life{"'"}s hard stuff without losing our grip.
                 </p>
                 <div className="mt-4">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#5A5852] hover:text-foreground transition-colors">
-                    View
+                  <a href="https://www.amazon.com/Everythings-Going-Be-Okay-Yourself-ebook/dp/B0BWF3KTD1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#5A5852] hover:text-foreground transition-colors">
+                    View on Amazon
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
                 </div>
