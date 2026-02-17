@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: 'Lora', 'Lora Fallback';
-  --font-serif: 'Cormorant Garamond', 'Cormorant Garamond Fallback';
-
+  --font-sans: "Lora", "Lora Fallback";
+  --font-serif: "Cormorant Garamond", "Cormorant Garamond Fallback";
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-card: hsl(var(--card));
@@ -78,12 +77,15 @@
   --sidebar-ring: 30 45% 35%;
 }
 
-* {
-  border-color: hsl(var(--border));
-  outline-color: hsl(var(--ring) / 0.5);
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  border-color: var(--color-border, currentColor);
 }
 
 body {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
