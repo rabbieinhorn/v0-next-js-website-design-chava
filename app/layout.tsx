@@ -1,7 +1,5 @@
-import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Lora } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
@@ -19,11 +17,9 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 })
 
-
 export const metadata: Metadata = {
   title: 'Chava Floryn | Private Practice',
   description: 'Referral-based private practice offering thoughtful, personalized guidance. Limited openings available.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -62,7 +58,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Analytics />
       </body>
     </html>
   )
