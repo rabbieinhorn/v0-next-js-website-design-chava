@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme inline {
   --font-sans: 'Lora', 'Lora Fallback';
@@ -42,49 +42,48 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@layer base {
-  :root {
-    --background: 45 30% 97%;
-    --foreground: 30 15% 15%;
-    --card: 40 25% 95%;
-    --card-foreground: 30 15% 15%;
-    --popover: 45 30% 97%;
-    --popover-foreground: 30 15% 15%;
-    --primary: 30 45% 35%;
-    --primary-foreground: 45 30% 97%;
-    --secondary: 35 20% 88%;
-    --secondary-foreground: 30 15% 25%;
-    --muted: 35 15% 90%;
-    --muted-foreground: 30 10% 45%;
-    --accent: 35 20% 88%;
-    --accent-foreground: 30 15% 25%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 30 15% 85%;
-    --input: 30 15% 85%;
-    --ring: 30 45% 35%;
-    --radius: 0.5rem;
-    --chart-1: 30 45% 35%;
-    --chart-2: 35 30% 50%;
-    --chart-3: 40 25% 60%;
-    --chart-4: 45 20% 70%;
-    --chart-5: 50 15% 80%;
-    --sidebar: 40 25% 95%;
-    --sidebar-foreground: 30 15% 15%;
-    --sidebar-primary: 30 45% 35%;
-    --sidebar-primary-foreground: 45 30% 97%;
-    --sidebar-accent: 35 20% 88%;
-    --sidebar-accent-foreground: 30 15% 25%;
-    --sidebar-border: 30 15% 85%;
-    --sidebar-ring: 30 45% 35%;
-  }
+:root {
+  --background: 45 30% 97%;
+  --foreground: 30 15% 15%;
+  --card: 40 25% 95%;
+  --card-foreground: 30 15% 15%;
+  --popover: 45 30% 97%;
+  --popover-foreground: 30 15% 15%;
+  --primary: 30 45% 35%;
+  --primary-foreground: 45 30% 97%;
+  --secondary: 35 20% 88%;
+  --secondary-foreground: 30 15% 25%;
+  --muted: 35 15% 90%;
+  --muted-foreground: 30 10% 45%;
+  --accent: 35 20% 88%;
+  --accent-foreground: 30 15% 25%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 30 15% 85%;
+  --input: 30 15% 85%;
+  --ring: 30 45% 35%;
+  --radius: 0.5rem;
+  --chart-1: 30 45% 35%;
+  --chart-2: 35 30% 50%;
+  --chart-3: 40 25% 60%;
+  --chart-4: 45 20% 70%;
+  --chart-5: 50 15% 80%;
+  --sidebar: 40 25% 95%;
+  --sidebar-foreground: 30 15% 15%;
+  --sidebar-primary: 30 45% 35%;
+  --sidebar-primary-foreground: 45 30% 97%;
+  --sidebar-accent: 35 20% 88%;
+  --sidebar-accent-foreground: 30 15% 25%;
+  --sidebar-border: 30 15% 85%;
+  --sidebar-ring: 30 45% 35%;
+}
 
-  * {
-    border-color: hsl(var(--border));
-    outline-color: hsl(var(--ring) / 0.5);
-  }
-  body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-  }
+* {
+  border-color: hsl(var(--border));
+  outline-color: hsl(var(--ring) / 0.5);
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
