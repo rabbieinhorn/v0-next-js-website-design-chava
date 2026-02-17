@@ -1,6 +1,6 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Cormorant_Garamond, Lora, DM_Sans, Playfair_Display } from 'next/font/google'
+import { Cormorant_Garamond, Lora } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Header } from '@/components/header'
@@ -19,17 +19,6 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 })
 
-const dmSans = DM_Sans({ 
-  subsets: ['latin'],
-  variable: '--font-dm-sans',
-  display: 'swap',
-})
-
-const playfair = Playfair_Display({ 
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Chava Floryn | Private Practice',
