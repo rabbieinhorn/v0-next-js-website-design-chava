@@ -88,11 +88,16 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  border-color: var(--color-border, currentColor);
+  outline-color: var(--color-ring);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
