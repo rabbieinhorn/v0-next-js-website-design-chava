@@ -176,23 +176,23 @@ export default function HomePage() {
 
       {/* What changes in four weeks */}
       <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-5xl rounded-2xl border border-[rgba(0,0,0,0.08)] bg-secondary px-6 py-10 sm:px-10 md:px-12 md:py-12">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl md:text-[2.5rem] text-center">
+        <div className="mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-6 py-10 sm:px-10 md:px-12 md:py-12">
+          <h2 className="font-serif text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl md:text-[2.5rem] text-center">
             What changes in four weeks
           </h2>
           <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
             {changesColumns.map((column) => (
               <div 
                 key={column.title} 
-                className="rounded-xl border border-[rgba(0,0,0,0.06)] bg-card px-5 py-6 transition-colors duration-200 hover:border-[rgba(0,0,0,0.10)]"
+                className="rounded-xl border border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.1)] px-5 py-6 transition-colors duration-200 hover:bg-[rgba(255,255,255,0.15)]"
               >
-                <h3 className="font-serif text-xl font-semibold text-foreground">
+                <h3 className="font-serif text-xl font-semibold text-primary-foreground">
                   {column.title}
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {column.points.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm text-[#5A5852]">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
+                    <li key={point} className="flex items-start gap-3 text-sm text-[rgba(255,255,255,0.8)]">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary-foreground" />
                       {point}
                     </li>
                   ))}
