@@ -31,9 +31,9 @@ const principles = [
 ]
 
 const selectedWork = [
-  { title: 'Book', description: 'On pattern recognition and executive decision-making' },
-  { title: 'Podcast', description: 'Conversations on leadership and internal operating systems' },
-  { title: 'Documentary', description: 'An intimate look at the work and its methodology' },
+  { title: 'Book', description: 'A framework for pattern recognition and executive decision-making under pressure. How leaders can access clarity when the stakes are highest.' },
+  { title: 'Podcast', description: 'Conversations on regulation, resilience, and pattern interruption' },
+  { title: 'Video', description: 'An intimate look at the methodology behind pattern interruption and decision stabilization' },
 ]
 
 export default function AboutPage() {
