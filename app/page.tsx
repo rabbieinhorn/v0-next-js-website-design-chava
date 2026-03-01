@@ -104,42 +104,69 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="px-6 py-24 md:py-32 lg:py-40">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl text-balance">
-                Confidential intervention for leaders at strategic inflection points.
-              </h1>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-[#5A5852] sm:text-lg">
-                Interrupting the patterns that sabotage leadership, relationships, and decision-making under pressure.
-              </p>
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-[#5A5852] sm:text-lg">
-                Time-bound work that stabilizes the internal operating system—so irreversible decisions are made from clarity, not pattern.
-              </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Button asChild size="lg">
-                  <Link href="/request">Begin a Conversation</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="bg-transparent">
-                  <Link href="/private-work">Explore Engagements</Link>
-                </Button>
-              </div>
-              <p className="mt-6 text-sm text-[#7A776F]">
-                Referral-based private practice · Limited openings
+      <section className="bg-[#1A1D24] text-white">
+        {/* Top bar: DECISION STABILIST */}
+        <div className="px-6 pt-12 pb-6 md:pt-16 md:pb-8">
+          <p className="text-center font-sans text-sm font-semibold uppercase tracking-[0.3em] text-white/90">
+            Decision<br />Stabilist
+          </p>
+        </div>
+
+        {/* Main hero content */}
+        <div className="border-t border-white/10 px-6 py-10 md:py-14">
+          <div className="mx-auto max-w-6xl">
+            {/* Top row: Available Via Zoom + tagline */}
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-12 mb-10 md:mb-14">
+              <span className="text-xs font-semibold uppercase tracking-wider text-white/70 shrink-0">
+                Available Via Zoom
+              </span>
+              <p className="font-serif text-lg md:text-xl text-white/80 italic">
+                Irreversible Decisions Require Internal Stability.
               </p>
             </div>
-            <div className="flex items-center justify-center">
-              <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-[rgba(0,0,0,0.08)]">
+
+            {/* Name + Portrait */}
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12">
+              <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tight text-white uppercase">
+                Chava<br />Floryn
+              </h1>
+              <div className="relative aspect-[4/5] w-full max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0">
                 <Image
                   src="/images/hero-portrait.jpg"
-                  alt="Professional portrait of Dr. Neeta in elegant white suit"
+                  alt="Professional portrait of Chava Floryn"
                   fill
-                  className="object-cover"
+                  className="object-cover grayscale"
                   priority
                 />
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Purple accent line */}
+        <div className="h-[3px] bg-[#8B5CF6]" />
+
+        {/* Description + CTA area */}
+        <div className="px-6 py-14 md:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-serif text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/85">
+              Chava works privately with high-performing leaders at strategic inflection points — stabilizing decision-making under pressure through compressed, high-intensity intervention.
+            </p>
+
+            {/* Glass button */}
+            <div className="mt-10 md:mt-12">
+              <Link
+                href="/request"
+                className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white/90 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30"
+              >
+                Request Qualification Assessment
+              </Link>
+            </div>
+
+            {/* Tagline */}
+            <p className="mt-14 md:mt-16 text-lg md:text-xl font-bold tracking-wide text-white">
+              Selective. Discreet. Limited Capacity.
+            </p>
           </div>
         </div>
       </section>
