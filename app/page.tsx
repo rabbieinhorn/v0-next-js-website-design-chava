@@ -301,12 +301,10 @@ export default function HomePage() {
             {selectedWork.map((work) => (
               <div key={work.title} className="flex flex-col">
                 {/* Thumbnail placeholder */}
-                <div className={`${work.aspectRatio} w-full rounded-xl border border-[rgba(0,0,0,0.08)] bg-secondary overflow-hidden`}>
-                  <div className="h-full w-full flex items-center justify-center">
-                    <span className="text-xs text-[#7A776F] font-mono uppercase tracking-wider">
-                      {work.title}
-                    </span>
-                  </div>
+                <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center`}>
+                  <span className="font-serif text-xs font-medium uppercase tracking-[0.25em] text-[#5a5550]">
+                    {work.title}
+                  </span>
                 </div>
                 <h3 className="mt-4 font-serif text-lg font-medium text-foreground uppercase tracking-wide">
                   {work.title}
