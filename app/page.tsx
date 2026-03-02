@@ -136,9 +136,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Purple accent line */}
-        <div className="h-[3px] bg-[#8B5CF6]" />
-
         {/* Description + CTA area */}
         <div className="px-5 py-10 sm:px-6 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
