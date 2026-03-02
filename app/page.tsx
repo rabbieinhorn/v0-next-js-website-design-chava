@@ -108,21 +108,21 @@ export default function HomePage() {
         {/* Main hero content */}
         <div className="px-6 py-10 md:py-14">
           <div className="mx-auto max-w-6xl">
-            {/* Top row: Available Via Zoom + tagline */}
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-12 mb-10 md:mb-14">
-              <span className="text-xs font-semibold uppercase tracking-wider text-white/70 shrink-0">
-                Available Via Zoom
-              </span>
-              <p className="font-serif text-lg md:text-xl text-white/80 italic">
-                Irreversible Decisions Require Internal Stability.
-              </p>
-            </div>
+            {/* Tagline */}
+            <p className="font-serif text-lg md:text-xl text-white/80 italic mb-10 md:mb-14">
+              Irreversible Decisions Require Internal Stability.
+            </p>
 
             {/* Name + Portrait */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12">
-              <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tight text-white uppercase">
-                Chava<br />Floryn
-              </h1>
+              <div>
+                <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tight text-white uppercase">
+                  Chava<br />Floryn
+                </h1>
+                <p className="mt-4 font-serif text-[11px] uppercase tracking-[0.25em] text-white/60">
+                  Available via Zoom
+                </p>
+              </div>
               <div className="relative aspect-[4/5] w-full max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0">
                 <Image
                   src="/images/hero-portrait.jpg"
