@@ -104,7 +104,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-[#4A4843] text-white">
+      <section className="relative bg-[#4A4843] text-white">
         {/* Main hero content */}
         <div className="px-5 py-8 sm:px-6 md:py-14">
           <div className="mx-auto max-w-6xl">
@@ -118,9 +118,6 @@ export default function HomePage() {
                 <h1 className="font-serif text-[2.75rem] leading-[0.9] sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-white uppercase">
                   Chava<br />Floryn
                 </h1>
-                <p className="mt-3 sm:mt-4 font-serif text-[11px] uppercase tracking-[0.25em] text-white/60">
-                  Available via Zoom
-                </p>
               </div>
               <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0 isolate">
                 <Image
@@ -158,6 +155,11 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+
+        {/* Ambient detail */}
+        <p className="absolute bottom-7 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45">
+          Available via Zoom
+        </p>
       </section>
 
       {/* When this is the right time */}
