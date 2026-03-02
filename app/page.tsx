@@ -123,7 +123,7 @@ export default function HomePage() {
                   Available via Zoom
                 </p>
               </div>
-              <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0">
+              <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0 isolate">
                 <Image
                   src="/images/hero-portrait.jpg"
                   alt="Professional portrait of Chava Floryn"
