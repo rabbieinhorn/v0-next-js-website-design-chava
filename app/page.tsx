@@ -269,10 +269,12 @@ export default function HomePage() {
           <p className="mt-6 text-base leading-relaxed text-[#5A5852]">
             A limited-volume practice ensuring depth, availability, and absolute confidentiality.
           </p>
-          <div className="mt-8 rounded-lg border border-[rgba(0,0,0,0.08)] bg-card px-6 py-4">
-            <p className="text-sm text-[#5A5852]">
-              Not therapy. Not crisis psychiatry. Not for active addiction.
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <div className="h-px w-[60px] bg-[#5a5550]/30" />
+            <p className="text-center font-serif text-lg italic text-[#5a5550] md:text-xl">
+              {'Not therapy \u00B7 Not crisis psychiatry \u00B7 Not for active addiction'}
             </p>
+            <div className="h-px w-[60px] bg-[#5a5550]/30" />
           </div>
         </div>
       </section>
