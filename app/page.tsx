@@ -136,9 +136,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Purple accent line */}
-        <div className="h-[3px] bg-[#8B5CF6]" />
-
         {/* Description + CTA area */}
         <div className="px-5 py-10 sm:px-6 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
@@ -157,7 +154,7 @@ export default function HomePage() {
             </div>
 
             {/* Tagline */}
-            <p className="mt-10 md:mt-16 text-base sm:text-lg md:text-xl font-bold tracking-wide text-white">
+            <p className="mt-10 md:mt-16 text-xs sm:text-sm font-medium uppercase tracking-[0.3em] text-white/70">
               Selective. Discreet. Limited Capacity.
             </p>
           </div>
