@@ -105,36 +105,25 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="bg-[#4A4843] text-white">
-        {/* Top bar: Logo */}
-        <div className="flex justify-center px-6 pt-10 pb-6 md:pt-14 md:pb-8">
-          <Image
-            src="/images/cf-logo.png"
-            alt="Chava Floryn logo"
-            width={240}
-            height={240}
-            className="h-36 w-auto md:h-44 mix-blend-lighten"
-          />
-        </div>
-
         {/* Main hero content */}
-        <div className="border-t border-white/10 px-6 py-10 md:py-14">
+        <div className="px-5 py-8 sm:px-6 md:py-14">
           <div className="mx-auto max-w-6xl">
-            {/* Top row: Available Via Zoom + tagline */}
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-12 mb-10 md:mb-14">
-              <span className="text-xs font-semibold uppercase tracking-wider text-white/70 shrink-0">
-                Available Via Zoom
-              </span>
-              <p className="font-serif text-lg md:text-xl text-white/80 italic">
-                Irreversible Decisions Require Internal Stability.
-              </p>
-            </div>
+            {/* Tagline */}
+            <p className="font-serif text-base sm:text-lg md:text-xl text-white/80 italic mb-8 md:mb-14">
+              Irreversible Decisions Require Internal Stability.
+            </p>
 
             {/* Name + Portrait */}
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12">
-              <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light leading-[0.9] tracking-tight text-white uppercase">
-                Chava<br />Floryn
-              </h1>
-              <div className="relative aspect-[4/5] w-full max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0">
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12">
+              <div>
+                <h1 className="font-serif text-[2.75rem] leading-[0.9] sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-white uppercase">
+                  Chava<br />Floryn
+                </h1>
+                <p className="mt-3 sm:mt-4 font-serif text-[11px] uppercase tracking-[0.25em] text-white/60">
+                  Available via Zoom
+                </p>
+              </div>
+              <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0">
                 <Image
                   src="/images/hero-portrait.jpg"
                   alt="Professional portrait of Chava Floryn"
@@ -151,40 +140,37 @@ export default function HomePage() {
         <div className="h-[3px] bg-[#8B5CF6]" />
 
         {/* Description + CTA area */}
-        <div className="px-6 py-14 md:py-20">
+        <div className="px-5 py-10 sm:px-6 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="font-serif text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/85">
+            <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/85">
               Chava works privately with high-performing leaders at strategic inflection points — stabilizing decision-making under pressure through compressed, high-intensity intervention.
             </p>
 
-            {/* Glass button */}
-            <div className="mt-10 md:mt-12">
+            {/* CTA button */}
+            <div className="mt-8 md:mt-12">
               <Link
                 href="/request"
-                className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white/90 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30"
+                className="inline-block rounded-[4px] border border-[#f3f0ea] bg-[#f3f0ea] px-6 py-3 sm:px-8 sm:py-4 font-serif text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-[#3a3530] transition-all hover:bg-transparent hover:border-white hover:text-white"
               >
                 Request Qualification Assessment
               </Link>
             </div>
 
             {/* Tagline */}
-            <p className="mt-14 md:mt-16 text-lg md:text-xl font-bold tracking-wide text-white">
+            <p className="mt-10 md:mt-16 text-base sm:text-lg md:text-xl font-bold tracking-wide text-white">
               Selective. Discreet. Limited Capacity.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="mx-auto w-16 border-t border-border" />
-
       {/* When this is the right time */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-5 pt-12 pb-12 sm:px-6 md:pt-24 md:pb-24">
         <div className="mx-auto max-w-5xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             When this is the right time
           </h2>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+          <div className="mt-8 md:mt-12 grid gap-4 sm:gap-5 sm:grid-cols-2">
             {rightTimeCards.map((card) => (
               <div 
                 key={card.title} 
@@ -206,12 +192,12 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* What changes in four weeks */}
-      <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-6 py-10 sm:px-10 md:px-12 md:py-12">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl md:text-[2.5rem] text-center">
+      <section className="px-5 py-12 sm:px-6 md:py-24">
+        <div className="mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-5 py-8 sm:px-10 md:px-12 md:py-12">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl md:text-[2.5rem] text-center">
             What changes in four weeks
           </h2>
-          <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
+          <div className="mt-8 md:mt-14 grid gap-6 md:grid-cols-3 md:gap-8">
             {changesColumns.map((column) => (
               <div 
                 key={column.title} 
@@ -238,12 +224,12 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* The Engagement Arc */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-5 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             The Engagement Arc
           </h2>
-          <div className="mt-16 relative">
+          <div className="mt-10 md:mt-16 relative">
             {/* Vertical timeline line */}
             <div className="absolute left-4 top-0 bottom-0 w-px bg-[rgba(0,0,0,0.08)]" aria-hidden="true" />
             
@@ -275,18 +261,20 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* A private practice */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-5 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
             A private practice
           </h2>
           <p className="mt-6 text-base leading-relaxed text-[#5A5852]">
             A limited-volume practice ensuring depth, availability, and absolute confidentiality.
           </p>
-          <div className="mt-8 rounded-lg border border-[rgba(0,0,0,0.08)] bg-card px-6 py-4">
-            <p className="text-sm text-[#5A5852]">
-              Not therapy. Not crisis psychiatry. Not for active addiction.
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <div className="h-px w-[60px] bg-[#5a5550]/30" />
+            <p className="text-center font-serif text-lg italic text-[#5a5550] md:text-xl">
+              {'Not therapy \u00B7 Not crisis psychiatry \u00B7 Not for active addiction'}
             </p>
+            <div className="h-px w-[60px] bg-[#5a5550]/30" />
           </div>
         </div>
       </section>
@@ -295,21 +283,19 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* Selected work */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-5 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Selected work
           </h2>
-          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+          <div className="mt-8 md:mt-12 grid gap-8 md:grid-cols-3">
             {selectedWork.map((work) => (
               <div key={work.title} className="flex flex-col">
                 {/* Thumbnail placeholder */}
-                <div className={`${work.aspectRatio} w-full rounded-xl border border-[rgba(0,0,0,0.08)] bg-secondary overflow-hidden`}>
-                  <div className="h-full w-full flex items-center justify-center">
-                    <span className="text-xs text-[#7A776F] font-mono uppercase tracking-wider">
-                      {work.title}
-                    </span>
-                  </div>
+                <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center`}>
+                  <span className="font-serif text-xs font-medium uppercase tracking-[0.25em] text-[#5a5550]">
+                    {work.title}
+                  </span>
                 </div>
                 <h3 className="mt-4 font-serif text-lg font-medium text-foreground uppercase tracking-wide">
                   {work.title}
@@ -346,15 +332,18 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA band */}
-      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-6 py-20 md:py-28 lg:py-32">
+      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-5 py-14 sm:px-6 md:py-28 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
             If you've outgrown the pattern, you don't need more information, you need intervention.
           </h2>
           <div className="mt-10">
-            <Button asChild size="lg">
-              <Link href="/request">Begin a Conversation</Link>
-            </Button>
+            <Link
+              href="/request"
+              className="inline-block rounded-[4px] bg-[#3a3530] px-8 py-4 font-serif text-sm font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+            >
+              Begin a Conversation
+            </Link>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
             Investment shared upon acceptance. Engagements begin at $15,000.

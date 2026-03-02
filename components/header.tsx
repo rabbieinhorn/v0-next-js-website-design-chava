@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -30,9 +31,18 @@ export function Header() {
         {/* Logo */}
         <Link 
           href="/" 
-          className="font-serif text-xl font-medium tracking-tight text-foreground transition-opacity hover:opacity-70"
+          className="flex items-center gap-2.5 transition-opacity hover:opacity-70"
         >
-          Chava Floryn
+          <Image
+            src="/images/cf-logo.png"
+            alt="Chava Floryn monogram"
+            width={32}
+            height={32}
+            className="h-7 w-auto"
+          />
+          <span className="font-serif text-lg font-light tracking-tight text-foreground">
+            Chava Floryn
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -51,9 +61,12 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-2">
-            <Link href="/request">Begin a Conversation</Link>
-          </Button>
+          <Link
+            href="/request"
+            className="ml-2 inline-block rounded-[4px] bg-[#3a3530] px-5 py-2 font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+          >
+            Begin a Conversation
+          </Link>
         </nav>
 
         {/* Mobile Menu */}
@@ -86,9 +99,12 @@ export function Header() {
                 </SheetClose>
               ))}
               <SheetClose asChild>
-                <Button asChild className="mt-4 w-full">
-                  <Link href="/request">Begin a Conversation</Link>
-                </Button>
+                <Link
+                  href="/request"
+                  className="mt-4 block w-full rounded-[4px] bg-[#3a3530] px-5 py-3 text-center font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+                >
+                  Begin a Conversation
+                </Link>
               </SheetClose>
             </nav>
           </SheetContent>
