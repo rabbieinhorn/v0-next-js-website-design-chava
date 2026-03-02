@@ -143,7 +143,7 @@ export default function HomePage() {
             <div className="mt-8 md:mt-12">
               <Link
                 href="/request"
-                className="inline-block rounded-[4px] border border-[#f3f0ea] bg-[#f3f0ea] px-6 py-3 sm:px-8 sm:py-4 font-serif text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-[#3a3530] transition-all hover:bg-transparent hover:border-white hover:text-white"
+                className="inline-block rounded-[3px] bg-[#f0ece4] px-10 py-4 font-serif text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4]"
               >
                 Request Qualification Assessment
               </Link>
