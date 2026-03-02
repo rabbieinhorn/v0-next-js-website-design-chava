@@ -336,9 +336,12 @@ export default function HomePage() {
             If you've outgrown the pattern, you don't need more information, you need intervention.
           </h2>
           <div className="mt-10">
-            <Button asChild size="lg">
-              <Link href="/request">Begin a Conversation</Link>
-            </Button>
+            <Link
+              href="/request"
+              className="inline-block rounded-[4px] bg-[#3a3530] px-8 py-4 font-serif text-sm font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+            >
+              Begin a Conversation
+            </Link>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
             Investment shared upon acceptance. Engagements begin at $15,000.

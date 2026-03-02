@@ -61,9 +61,12 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-2">
-            <Link href="/request">Begin a Conversation</Link>
-          </Button>
+          <Link
+            href="/request"
+            className="ml-2 inline-block rounded-[4px] bg-[#3a3530] px-5 py-2 font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+          >
+            Begin a Conversation
+          </Link>
         </nav>
 
         {/* Mobile Menu */}
@@ -96,9 +99,12 @@ export function Header() {
                 </SheetClose>
               ))}
               <SheetClose asChild>
-                <Button asChild className="mt-4 w-full">
-                  <Link href="/request">Begin a Conversation</Link>
-                </Button>
+                <Link
+                  href="/request"
+                  className="mt-4 block w-full rounded-[4px] bg-[#3a3530] px-5 py-3 text-center font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
+                >
+                  Begin a Conversation
+                </Link>
               </SheetClose>
             </nav>
           </SheetContent>
