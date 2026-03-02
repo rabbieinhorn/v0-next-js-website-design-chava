@@ -15,6 +15,7 @@ export function Footer() {
         <div className="flex justify-center py-6">
           <Link
             href="/request"
+            aria-label="Begin a conversation with Chava Floryn"
             className="group font-serif text-[14px] text-[#2e2b28]/70 transition-colors duration-200 hover:text-[#2e2b28]"
           >
             Begin a Conversation{' '}

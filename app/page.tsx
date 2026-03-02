@@ -104,7 +104,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-[#4A4843] text-white">
+      <section className="relative bg-[#4A4843] text-white dark-focus">
         {/* Main hero content */}
         <div className="px-5 py-8 sm:px-6 md:py-14">
           <div className="mx-auto max-w-6xl">
@@ -122,7 +122,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0 isolate">
                 <Image
                   src="/images/hero-portrait.jpg"
-                  alt="Professional portrait of Chava Floryn"
+                  alt="Chava Floryn, private practice therapist, seated in white suit"
                   fill
                   className="object-cover grayscale"
                   priority
@@ -143,24 +143,25 @@ export default function HomePage() {
             <div className="mt-8 md:mt-12">
               <Link
                 href="/request"
-                className="inline-block rounded-[3px] bg-[#f0ece4] px-10 py-4 font-serif text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4]"
+                aria-label="Begin a conversation with Chava Floryn"
+                className="inline-block rounded-[3px] bg-[#f0ece4] px-10 py-4 font-serif text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4] dark-focus-ring"
               >
                 Begin a Conversation
               </Link>
-              <p className="mt-3 font-serif text-[11px] italic text-white/60">
+              <p className="mt-3 font-serif text-[11px] italic text-white/60" aria-hidden="true">
                 Engagements begin with a qualification assessment.
               </p>
             </div>
 
             {/* Tagline */}
-            <p className="mt-10 md:mt-16 text-xs sm:text-sm font-medium uppercase tracking-[0.3em] text-white/70">
+            <p className="mt-10 md:mt-16 text-xs sm:text-sm font-medium uppercase tracking-[0.3em] text-white/70" aria-hidden="true">
               Selective. Discreet. Limited Capacity.
             </p>
           </div>
         </div>
 
         {/* Ambient detail */}
-        <p className="absolute bottom-7 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45">
+        <p className="absolute bottom-7 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45" aria-hidden="true">
           Available via Zoom
         </p>
       </section>
@@ -203,7 +204,7 @@ export default function HomePage() {
 
       {/* What changes in four weeks */}
       <section className="px-5 py-12 sm:px-6 md:py-24">
-        <div className="mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-5 py-8 sm:px-10 md:px-12 md:py-12">
+        <div className="dark-focus mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-5 py-8 sm:px-10 md:px-12 md:py-12">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl md:text-[2.5rem] text-center">
             What changes in four weeks
           </h2>
@@ -380,6 +381,14 @@ export default function HomePage() {
                     {work.cta}
                   </Link>
                 )}
+                {(work.title === 'Video' || work.title === 'Podcast') && (
+                  <a
+                    href="#transcript"
+                    className="mt-1.5 inline-block font-serif text-[11px] italic text-[#2e2b28]/50 transition-colors duration-200 hover:text-[#2e2b28]/80"
+                  >
+                    {work.title === 'Video' ? 'View transcript \u2193' : 'Read transcript \u2193'}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -395,6 +404,7 @@ export default function HomePage() {
           <div className="mt-10">
             <Link
               href="/request"
+              aria-label="Begin a conversation with Chava Floryn"
               className="inline-block rounded-[4px] bg-[#3a3530] px-8 py-4 font-serif text-sm font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
             >
               Begin a Conversation

@@ -63,6 +63,7 @@ export function Header() {
           ))}
           <Link
             href="/request"
+            aria-label="Begin a conversation with Chava Floryn"
             className="ml-2 inline-block rounded-[4px] bg-[#3a3530] px-5 py-2 font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
           >
             Begin a Conversation
@@ -101,6 +102,7 @@ export function Header() {
               <SheetClose asChild>
                 <Link
                   href="/request"
+                  aria-label="Begin a conversation with Chava Floryn"
                   className="mt-4 block w-full rounded-[4px] bg-[#3a3530] px-5 py-3 text-center font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
                 >
                   Begin a Conversation

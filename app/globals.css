@@ -104,3 +104,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* Accessible focus indicators */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid #2e2b28;
+  outline-offset: 3px;
+}
+
+/* Inverted focus ring for elements on dark backgrounds */
+.dark-focus a:focus-visible,
+.dark-focus button:focus-visible,
+.dark-focus [role="button"]:focus-visible,
+a.dark-focus-ring:focus-visible,
+button.dark-focus-ring:focus-visible {
+  outline-color: #f0ece4;
+}
