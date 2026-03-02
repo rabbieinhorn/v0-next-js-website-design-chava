@@ -175,11 +175,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="mx-auto w-16 border-t border-border" />
-
       {/* When this is the right time */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-6 pt-16 pb-16 md:pt-24 md:pb-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             When this is the right time
