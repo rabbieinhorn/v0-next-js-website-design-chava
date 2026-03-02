@@ -36,11 +36,11 @@ export function Header() {
           <Image
             src="/images/cf-logo.png"
             alt="Chava Floryn monogram"
-            width={32}
-            height={32}
-            className="h-7 w-auto"
+            width={60}
+            height={60}
+            className="h-[30px] w-[30px] object-contain"
           />
-          <span className="font-serif text-lg font-light tracking-tight text-foreground">
+          <span className="font-serif text-[15px] font-normal tracking-tight text-foreground">
             Chava Floryn
           </span>
         </Link>
