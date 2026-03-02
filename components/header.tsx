@@ -26,7 +26,7 @@ export function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[rgba(0,0,0,0.08)] bg-[rgba(247,244,239,0.92)] backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-[rgba(0,0,0,0.08)] bg-[#F7F4EF]">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/* Logo */}
         <Link 
@@ -36,11 +36,11 @@ export function Header() {
           <Image
             src="/images/cf-logo.png"
             alt="Chava Floryn monogram"
-            width={32}
-            height={32}
-            className="h-7 w-auto"
+            width={60}
+            height={60}
+            className="h-[30px] w-[30px] object-contain"
           />
-          <span className="font-serif text-lg font-light tracking-tight text-foreground">
+          <span className="font-serif text-[15px] font-normal tracking-tight text-foreground">
             Chava Floryn
           </span>
         </Link>
@@ -55,7 +55,7 @@ export function Header() {
                 'relative text-sm font-medium transition-colors hover:text-foreground',
                 pathname === item.href
                   ? 'text-foreground after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground/40'
-                  : 'text-[#5A5852]'
+                  : 'text-[#2e2a26]'
               )}
             >
               {item.label}
@@ -63,6 +63,7 @@ export function Header() {
           ))}
           <Link
             href="/request"
+            aria-label="Begin a conversation with Chava Floryn"
             className="ml-2 inline-block rounded-[4px] bg-[#3a3530] px-5 py-2 font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
           >
             Begin a Conversation
@@ -101,6 +102,7 @@ export function Header() {
               <SheetClose asChild>
                 <Link
                   href="/request"
+                  aria-label="Begin a conversation with Chava Floryn"
                   className="mt-4 block w-full rounded-[4px] bg-[#3a3530] px-5 py-3 text-center font-serif text-xs font-medium uppercase tracking-[0.2em] text-[#f3f0ea] transition-colors hover:bg-[#5a5550]"
                 >
                   Begin a Conversation

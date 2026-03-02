@@ -68,7 +68,7 @@ export default function PrivateWorkPage() {
           <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Performance Strategy for Business Leaders
           </h1>
-          <p className="mt-6 text-base leading-relaxed text-[#5A5852] sm:text-lg">
+          <p className="mt-6 text-base leading-relaxed text-[#2e2a26] sm:text-lg">
             Confidential, time-bound intervention for leaders navigating high-stakes transitions.
           </p>
           <div className="mt-10">
@@ -76,7 +76,7 @@ export default function PrivateWorkPage() {
               <Link href="/request">Request Consideration</Link>
             </Button>
           </div>
-          <p className="mt-4 text-sm text-[#7A776F]">
+          <p className="mt-4 text-sm text-[#2e2a26]">
             Engagements begin at $15,000 · Limited openings
           </p>
         </div>
@@ -93,11 +93,11 @@ export default function PrivateWorkPage() {
               <h3 className="font-serif text-xl font-semibold text-foreground">
                 The Decision Stabilization Intensive
               </h3>
-              <p className="mt-1 text-sm text-[#7A776F]">4 Weeks / Virtual</p>
+              <p className="mt-1 text-sm text-[#2e2a26]">4 Weeks / Virtual</p>
               <div className="mt-6 space-y-6">
                 <ul className="space-y-3">
                   {intensiveIncludes.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#5A5852]">
+                    <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#2e2a26]">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                       {item}
                     </li>
@@ -106,11 +106,11 @@ export default function PrivateWorkPage() {
                 <Separator className="bg-[rgba(0,0,0,0.08)]" />
                 <div>
                   <p className="text-sm font-medium text-foreground">Outcomes</p>
-                  <p className="mt-2 text-[13px] leading-[1.7] text-[#7A776F]">
+                  <p className="mt-2 text-[13px] leading-[1.7] text-[#2e2a26]">
                     Pattern interruption, emotional regulation, decision clarity.
                   </p>
                 </div>
-                <p className="text-xs text-[#7A776F] italic">
+                <p className="text-xs text-[#2e2a26] italic">
                   Designed to build self-reliance, not dependency.
                 </p>
               </div>
@@ -121,12 +121,12 @@ export default function PrivateWorkPage() {
               <h3 className="font-serif text-xl font-semibold text-foreground">
                 Private In-Person Intensive
               </h3>
-              <p className="mt-1 text-sm text-[#7A776F]">By Invitation</p>
+              <p className="mt-1 text-sm text-[#2e2a26]">By Invitation</p>
               <div className="mt-6 space-y-6">
-                <p className="text-[13px] leading-[1.7] text-[#5A5852]">
+                <p className="text-[13px] leading-[1.7] text-[#2e2a26]">
                   A personal retreat container for complex transitions. This format is reserved for situations requiring deeper immersion and physical presence.
                 </p>
-                <p className="text-[13px] leading-[1.7] text-[#5A5852]">
+                <p className="text-[13px] leading-[1.7] text-[#2e2a26]">
                   In-person intensives are structured around your specific circumstances and may include extended sessions, environmental assessment, and real-time intervention.
                 </p>
                 <Separator className="bg-[rgba(0,0,0,0.08)]" />
@@ -149,7 +149,7 @@ export default function PrivateWorkPage() {
           </h2>
           <ul className="mt-10 grid gap-4 sm:grid-cols-2">
             {whoThisIsFor.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#5A5852]">
+              <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#2e2a26]">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                 {item}
               </li>
@@ -168,7 +168,7 @@ export default function PrivateWorkPage() {
           </h2>
           <ul className="mt-10 space-y-3">
             {whoThisIsNotFor.map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#7A776F]">
+              <li key={item} className="flex items-start gap-3 text-[13px] leading-[1.7] text-[#2e2a26]">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[rgba(0,0,0,0.20)]" />
                 {item}
               </li>
@@ -192,15 +192,15 @@ export default function PrivateWorkPage() {
             What the process feels like
           </h2>
           <div className="mt-10 space-y-6">
-            <p className="text-base leading-relaxed text-[#5A5852]">
+            <p className="text-base leading-relaxed text-[#2e2a26]">
               <span className="font-medium text-foreground">We locate the root pattern.</span>{' '}
               Beneath the presenting issue—whether it's a decision, a relationship, or a leadership challenge—there is usually a deeper structure driving the repetition. We find it.
             </p>
-            <p className="text-base leading-relaxed text-[#5A5852]">
+            <p className="text-base leading-relaxed text-[#2e2a26]">
               <span className="font-medium text-foreground">We stabilize the nervous system response under load.</span>{' '}
               High-stakes moments trigger predictable responses. Through targeted protocols, we build your capacity to remain regulated when it matters most.
             </p>
-            <p className="text-base leading-relaxed text-[#5A5852]">
+            <p className="text-base leading-relaxed text-[#2e2a26]">
               <span className="font-medium text-foreground">We install new decision behavior and boundaries.</span>{' '}
               Insight without action is entertainment. The work is complete when new patterns are durable—held not by willpower, but by restructured internal architecture.
             </p>
@@ -222,7 +222,7 @@ export default function PrivateWorkPage() {
                 <AccordionTrigger className="text-left font-medium text-foreground hover:text-foreground">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-[#5A5852]">
+                <AccordionContent className="text-[#2e2a26]">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -242,7 +242,7 @@ export default function PrivateWorkPage() {
               <Link href="/request">Request Consideration</Link>
             </Button>
           </div>
-          <p className="mt-4 text-sm text-[#7A776F]">
+          <p className="mt-4 text-sm text-[#2e2a26]">
             Confidential. Selective. Time-bound.
           </p>
         </div>

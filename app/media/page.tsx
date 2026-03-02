@@ -47,7 +47,7 @@ export default function MediaPage() {
           <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Media
           </h1>
-          <p className="mt-4 text-base text-[#5A5852] sm:text-lg">
+          <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
             Selected work and appearances.
           </p>
         </div>
@@ -72,11 +72,11 @@ export default function MediaPage() {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   {"Everything's Gonna Be Okay: How to Nurture Yourself During a Storm"}
                 </h3>
-                <p className="mt-2 text-[13px] leading-[1.7] text-[#5A5852]">
+                <p className="mt-2 text-[13px] leading-[1.7] text-[#2e2a26]">
                   {"For leaders making consequential decisions in uncertain times, Everything's Gonna Be Okay reveals how to recognize internal patterns, regulate pressure, and lead with clarity when it matters most."}
                 </p>
                 <div className="mt-4">
-                  <a href="https://www.amazon.com/Everythings-Going-Be-Okay-Yourself-ebook/dp/B0BWF3KTD1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#5A5852] hover:text-foreground transition-colors">
+                  <a href="https://www.amazon.com/Everythings-Going-Be-Okay-Yourself-ebook/dp/B0BWF3KTD1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#2e2a26] hover:text-foreground transition-colors">
                     View on Amazon
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
@@ -100,13 +100,13 @@ export default function MediaPage() {
               <li key={episode.title} className="flex items-start justify-between gap-4 py-4">
                 <div>
                   <p className="font-medium text-foreground">{episode.title}</p>
-                  <p className="mt-1 text-[13px] text-[#7A776F]">{episode.description}</p>
+                  <p className="mt-1 text-[13px] text-[#2e2a26]">{episode.description}</p>
                 </div>
                 <a
                   href={episode.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex shrink-0 items-center gap-1 text-sm text-[#5A5852] hover:text-foreground transition-colors"
+                  className="flex shrink-0 items-center gap-1 text-sm text-[#2e2a26] hover:text-foreground transition-colors"
                 >
                   <Headphones className="h-3.5 w-3.5" />
                   Listen
@@ -125,7 +125,7 @@ export default function MediaPage() {
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
             Video
           </h2>
-          <p className="mt-4 text-[13px] leading-[1.7] text-[#5A5852]">
+          <p className="mt-4 text-[13px] leading-[1.7] text-[#2e2a26]">
             An intimate look at the methodology behind pattern interruption and decision stabilization.
           </p>
           
@@ -143,7 +143,7 @@ export default function MediaPage() {
               </div>
               <div className="p-6">
                 <div className="mt-2">
-                  <a href="https://www.youtube.com/watch?v=hu3bInK9DoE" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#5A5852] hover:text-foreground transition-colors">
+                  <a href="https://www.youtube.com/watch?v=hu3bInK9DoE" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#2e2a26] hover:text-foreground transition-colors">
                     Watch on YouTube
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </a>
@@ -164,7 +164,7 @@ export default function MediaPage() {
               </div>
               <div className="p-6">
                 <div className="mt-2">
-                  <a href="https://www.youtube.com/watch?v=tGsfoupiS9w" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#5A5852] hover:text-foreground transition-colors">
+                  <a href="https://www.youtube.com/watch?v=tGsfoupiS9w" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm text-[#2e2a26] hover:text-foreground transition-colors">
                     Watch on YouTube
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </a>

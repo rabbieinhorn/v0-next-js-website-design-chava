@@ -356,7 +356,7 @@ export function RequestForm() {
 
         {/* Confidentiality Note */}
         <div className="rounded-md border border-[rgba(0,0,0,0.08)] bg-card px-4 py-3">
-          <p className="text-xs text-[#5A5852]">
+          <p className="text-xs text-[#2e2a26]">
             <span className="font-medium text-foreground">Confidentiality:</span> All information submitted is held in strict confidence and will only be used to assess fit for engagement.
           </p>
         </div>
