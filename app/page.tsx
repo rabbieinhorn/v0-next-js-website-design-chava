@@ -333,14 +333,14 @@ export default function HomePage() {
                     href={work.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 text-sm text-[#5A5852] hover:text-foreground transition-colors"
+                    className="mt-3 inline-block font-serif text-[11px] uppercase tracking-[0.2em] text-[#2e2b28] border-b border-[#2e2b28]/40 pb-px transition-all duration-200 ease-in-out hover:border-[#2e2b28] hover:translate-x-0.5"
                   >
                     {work.cta}
                   </a>
                 ) : (
                   <Link
                     href={work.href}
-                    className="mt-3 text-sm text-[#5A5852] hover:text-foreground transition-colors"
+                    className="mt-3 inline-block font-serif text-[11px] uppercase tracking-[0.2em] text-[#2e2b28] border-b border-[#2e2b28]/40 pb-px transition-all duration-200 ease-in-out hover:border-[#2e2b28] hover:translate-x-0.5"
                   >
                     {work.cta}
                   </Link>
