@@ -157,11 +157,11 @@ export default function HomePage() {
               Chava works privately with high-performing leaders at strategic inflection points — stabilizing decision-making under pressure through compressed, high-intensity intervention.
             </p>
 
-            {/* Glass button */}
+            {/* CTA button */}
             <div className="mt-10 md:mt-12">
               <Link
                 href="/request"
-                className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white/90 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30"
+                className="inline-block rounded-[4px] border border-[#f3f0ea] bg-[#f3f0ea] px-8 py-4 font-serif text-sm font-medium uppercase tracking-[0.2em] text-[#3a3530] transition-all hover:bg-transparent hover:border-white hover:text-white"
               >
                 Request Qualification Assessment
               </Link>
