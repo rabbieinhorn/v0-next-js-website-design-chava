@@ -105,19 +105,8 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="bg-[#4A4843] text-white">
-        {/* Top bar: Logo */}
-        <div className="flex justify-center px-6 pt-10 pb-6 md:pt-14 md:pb-8">
-          <Image
-            src="/images/cf-logo.png"
-            alt="Chava Floryn logo"
-            width={240}
-            height={240}
-            className="h-36 w-auto md:h-44 mix-blend-lighten"
-          />
-        </div>
-
         {/* Main hero content */}
-        <div className="border-t border-white/10 px-6 py-10 md:py-14">
+        <div className="px-6 py-10 md:py-14">
           <div className="mx-auto max-w-6xl">
             {/* Top row: Available Via Zoom + tagline */}
             <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-12 mb-10 md:mb-14">
