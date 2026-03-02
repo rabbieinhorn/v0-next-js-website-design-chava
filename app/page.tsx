@@ -105,11 +105,15 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="bg-[#1A1D24] text-white">
-        {/* Top bar: DECISION STABILIST */}
-        <div className="px-6 pt-12 pb-6 md:pt-16 md:pb-8">
-          <p className="text-center font-sans text-sm font-semibold uppercase tracking-[0.3em] text-white/90">
-            Decision<br />Stabilist
-          </p>
+        {/* Top bar: Logo */}
+        <div className="flex justify-center px-6 pt-10 pb-6 md:pt-14 md:pb-8">
+          <Image
+            src="/images/cf-logo.png"
+            alt="Chava Floryn logo"
+            width={120}
+            height={120}
+            className="h-20 w-auto md:h-24 brightness-0 invert"
+          />
         </div>
 
         {/* Main hero content */}
