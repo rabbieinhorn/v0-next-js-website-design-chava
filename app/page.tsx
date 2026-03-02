@@ -154,7 +154,7 @@ export default function HomePage() {
             </div>
 
             {/* Tagline */}
-            <p className="mt-10 md:mt-16 text-base sm:text-lg md:text-xl font-bold tracking-wide text-white">
+            <p className="mt-10 md:mt-16 text-xs sm:text-sm font-medium uppercase tracking-[0.3em] text-white/70">
               Selective. Discreet. Limited Capacity.
             </p>
           </div>
