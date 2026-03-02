@@ -108,14 +108,13 @@ export default function HomePage() {
         {/* Main hero content */}
         <div className="px-5 py-8 sm:px-6 md:py-14">
           <div className="mx-auto max-w-6xl">
-            {/* Tagline */}
-            <p className="font-serif text-base sm:text-lg md:text-xl text-white/80 italic mb-8 md:mb-14">
-              Irreversible Decisions Require Internal Stability.
-            </p>
-
             {/* Name + Portrait */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-12">
               <div>
+                {/* Tagline */}
+                <p className="font-serif text-base sm:text-lg text-white/85 italic mb-3 md:mb-4">
+                  Irreversible Decisions Require Internal Stability.
+                </p>
                 <h1 className="font-serif text-[2.75rem] leading-[0.9] sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-white uppercase">
                   Chava<br />Floryn
                 </h1>
