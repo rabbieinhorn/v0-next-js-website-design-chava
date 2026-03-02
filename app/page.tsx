@@ -289,12 +289,34 @@ export default function HomePage() {
           <div className="mt-8 md:mt-12 grid gap-8 md:grid-cols-3">
             {selectedWork.map((work) => (
               <div key={work.title} className="flex flex-col">
-                {/* Thumbnail placeholder */}
-                <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center`}>
-                  <span className="font-serif text-xs font-medium uppercase tracking-[0.25em] text-[#5a5550]">
-                    {work.title}
-                  </span>
-                </div>
+                {/* Thumbnail */}
+                {work.title === 'Book' ? (
+                  <div className={`${work.aspectRatio} w-full rounded-xl bg-[#2e2b28] overflow-hidden flex flex-col items-center justify-center px-6`}>
+                    <p className="font-serif text-[14px] leading-snug text-white text-center text-balance">
+                      {"Everything's Gonna Be Okay"}
+                    </p>
+                    <span className="mt-3 block h-px w-8 bg-white/25" />
+                    <p className="mt-3 font-serif text-[9px] uppercase tracking-[0.2em] text-white/50">
+                      Chava Floryn
+                    </p>
+                  </div>
+                ) : work.title === 'Video' ? (
+                  <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center`}>
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#5a5550]/40">
+                      <svg width="14" height="16" viewBox="0 0 14 16" fill="none" className="ml-0.5">
+                        <path d="M13 8L1 15V1L13 8Z" fill="#5a5550" fillOpacity="0.6" />
+                      </svg>
+                    </div>
+                  </div>
+                ) : (
+                  <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center gap-1`}>
+                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '12px' }} />
+                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '20px' }} />
+                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '28px' }} />
+                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '20px' }} />
+                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '12px' }} />
+                  </div>
+                )}
                 <h3 className="mt-4 font-serif text-lg font-medium text-foreground uppercase tracking-wide">
                   {work.title}
                 </h3>
