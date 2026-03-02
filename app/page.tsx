@@ -189,8 +189,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="mx-auto w-16 border-t border-border" />
+      {/* Atmospheric linen texture strip */}
+      <div className="relative h-[280px] w-full overflow-hidden">
+        <Image
+          src="/images/texture-linen-strip.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-[#5a5550]/20" />
+      </div>
 
       {/* What changes in four weeks */}
       <section className="px-5 py-12 sm:px-6 md:py-24">
@@ -258,24 +267,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="mx-auto w-16 border-t border-border" />
-
-      {/* A private practice */}
+      {/* A private practice — with atmospheric interior image */}
       <section className="px-5 py-12 sm:px-6 md:py-24">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
-            A private practice
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#2e2a26]">
-            A limited-volume practice ensuring depth, availability, and absolute confidentiality.
-          </p>
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <div className="h-px w-[60px] bg-[#5a5550]/30" />
-            <p className="text-center font-serif text-lg italic text-[#5a5550] md:text-xl">
-              {'Not therapy \u00B7 Not crisis psychiatry \u00B7 Not for active addiction'}
-            </p>
-            <div className="h-px w-[60px] bg-[#5a5550]/30" />
+        <div className="mx-auto max-w-5xl">
+          <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
+            {/* Left: atmospheric image */}
+            <div className="relative h-[280px] md:h-[360px] w-full md:w-[45%] shrink-0 overflow-hidden rounded-xl">
+              <Image
+                src="/images/atmosphere-interior.jpg"
+                alt=""
+                fill
+                className="object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-[#5a5550]/20 rounded-xl" />
+            </div>
+            {/* Right: text content */}
+            <div className="flex-1 md:pt-4">
+              <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
+                A private practice
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-[#2e2a26]">
+                A limited-volume practice ensuring depth, availability, and absolute confidentiality.
+              </p>
+              <div className="mt-10 flex flex-col items-start gap-4">
+                <div className="h-px w-[60px] bg-[#5a5550]/30" />
+                <p className="font-serif text-lg italic text-[#5a5550] md:text-xl">
+                  {'Not therapy \u00B7 Not crisis psychiatry \u00B7 Not for active addiction'}
+                </p>
+                <div className="h-px w-[60px] bg-[#5a5550]/30" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -284,8 +306,18 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* Selected work */}
-      <section className="px-5 py-12 sm:px-6 md:py-24">
-        <div className="mx-auto max-w-4xl">
+      <section className="relative px-5 py-12 sm:px-6 md:py-24 overflow-hidden">
+        {/* Subtle paper grain texture background */}
+        <div className="absolute inset-0 opacity-[0.04]">
+          <Image
+            src="/images/texture-paper-grain.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative mx-auto max-w-4xl">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Selected work
           </h2>
