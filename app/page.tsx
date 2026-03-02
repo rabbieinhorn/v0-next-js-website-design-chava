@@ -110,9 +110,9 @@ export default function HomePage() {
           <Image
             src="/images/cf-logo.png"
             alt="Chava Floryn logo"
-            width={120}
-            height={120}
-            className="h-20 w-auto md:h-24 brightness-0 invert"
+            width={160}
+            height={160}
+            className="h-24 w-auto md:h-28 mix-blend-lighten"
           />
         </div>
 

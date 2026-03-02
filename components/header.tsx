@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -31,15 +30,9 @@ export function Header() {
         {/* Logo */}
         <Link 
           href="/" 
-          className="transition-opacity hover:opacity-70"
+          className="font-serif text-xl font-medium tracking-tight text-foreground transition-opacity hover:opacity-70"
         >
-          <Image
-            src="/images/cf-logo.png"
-            alt="Chava Floryn logo"
-            width={80}
-            height={80}
-            className="h-9 w-auto"
-          />
+          Chava Floryn
         </Link>
 
         {/* Desktop Navigation */}
