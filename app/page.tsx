@@ -145,8 +145,11 @@ export default function HomePage() {
                 href="/request"
                 className="inline-block rounded-[3px] bg-[#f0ece4] px-10 py-4 font-serif text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4]"
               >
-                Request Qualification Assessment
+                Begin a Conversation
               </Link>
+              <p className="mt-3 font-serif text-[11px] italic text-white/60">
+                Engagements begin with a qualification assessment.
+              </p>
             </div>
 
             {/* Tagline */}
