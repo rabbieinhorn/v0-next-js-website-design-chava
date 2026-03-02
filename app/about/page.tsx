@@ -47,7 +47,7 @@ export default function AboutPage() {
               <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 About Chava
               </h1>
-              <p className="mt-4 text-base text-[#5A5852] sm:text-lg">
+              <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
                 A private practice built for high-stakes moments.
               </p>
             </div>
@@ -71,10 +71,10 @@ export default function AboutPage() {
       {/* Bio */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-2xl">
-          <p className="text-base leading-relaxed text-[#5A5852] sm:text-lg sm:leading-relaxed">
+          <p className="text-base leading-relaxed text-[#2e2a26] sm:text-lg sm:leading-relaxed">
             Chava Floryn is a confidential transformational performance strategist to ultra-high-net-worth founders, CEOs, and senior leaders navigating moments of significant personal, professional, or existential inflection. With over 25 years as a community leader and formerly the Senior Wellness Advisor at Centner Wellness Center, she has worked with thousands of people in her career. Her work is centered on stabilizing the internal operating system, interrupting entrenched patterns, regulating pressure at the nervous-system level, and restoring executive clarity when the cost of misalignment is high.
           </p>
-          <p className="mt-6 text-base leading-relaxed text-[#5A5852] sm:text-lg sm:leading-relaxed">
+          <p className="mt-6 text-base leading-relaxed text-[#2e2a26] sm:text-lg sm:leading-relaxed">
             Known for rapid diagnostic insight and surgical intervention, Chava identifies root dynamics with speed and precision, enabling leaders to make consequential decisions from coherence rather than force. She maintains a highly selective, referral-only practice and works in short, intensive engagements designed to produce durable internal realignment, without dependency, visibility, or unnecessary process.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   {principle.title}
                 </h3>
-                <p className="mt-3 text-[13px] leading-[1.7] text-[#7A776F]">
+                <p className="mt-3 text-[13px] leading-[1.7] text-[#2e2a26]">
                   {principle.description}
                 </p>
               </div>
@@ -123,9 +123,9 @@ export default function AboutPage() {
                 >
                   <div>
                     <p className="font-medium text-foreground">{work.title}</p>
-                    <p className="mt-1 text-[13px] text-[#7A776F]">{work.description}</p>
+                    <p className="mt-1 text-[13px] text-[#2e2a26]">{work.description}</p>
                   </div>
-                  <ArrowRight className="h-4 w-4 text-[#7A776F] transition-colors group-hover:text-foreground" />
+                  <ArrowRight className="h-4 w-4 text-[#2e2a26] transition-colors group-hover:text-foreground" />
                 </Link>
               </li>
             ))}
@@ -139,7 +139,7 @@ export default function AboutPage() {
           <Button asChild size="lg">
             <Link href="/request">Request Consideration</Link>
           </Button>
-          <p className="mt-4 text-sm text-[#7A776F]">
+          <p className="mt-4 text-sm text-[#2e2a26]">
             Referral-based private practice · Limited openings
           </p>
         </div>

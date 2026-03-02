@@ -135,7 +135,7 @@ export default function HomePage() {
         {/* Description + CTA area */}
         <div className="px-5 py-10 sm:px-6 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/85">
+            <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/95">
               Chava works privately with high-performing leaders at strategic inflection points — stabilizing decision-making under pressure through compressed, high-intensity intervention.
             </p>
 
@@ -180,7 +180,7 @@ export default function HomePage() {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   {card.title}
                 </h3>
-                <p className="mt-3 text-[13px] leading-[1.7] text-[#7A776F]">
+                <p className="mt-3 text-[13px] leading-[1.7] text-[#2e2a26]">
                   {card.description}
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function HomePage() {
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {column.points.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm text-[rgba(255,255,255,0.8)]">
+                    <li key={point} className="flex items-start gap-3 text-sm text-white/90">
                       <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary-foreground" />
                       {point}
                     </li>
@@ -239,7 +239,7 @@ export default function HomePage() {
                 <div key={step.step} className="relative flex items-start gap-8 pl-12">
                   {/* Step number aligned to the line */}
                   <div className="absolute left-0 flex h-8 w-8 items-center justify-center">
-                    <span className="font-mono text-xs font-medium text-[#7A776F]">
+                    <span className="font-mono text-xs font-medium text-[#2e2a26]">
                       {step.step}
                     </span>
                   </div>
@@ -247,7 +247,7 @@ export default function HomePage() {
                     <h3 className="font-serif text-lg font-medium text-foreground">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-[#7A776F]">
+                    <p className="mt-2 text-sm leading-relaxed text-[#2e2a26]">
                       {step.description}
                     </p>
                   </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
             A private practice
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#5A5852]">
+          <p className="mt-6 text-base leading-relaxed text-[#2e2a26]">
             A limited-volume practice ensuring depth, availability, and absolute confidentiality.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4">
@@ -328,7 +328,7 @@ export default function HomePage() {
                     {work.subtitle}
                   </p>
                 )}
-                <p className="mt-2 text-sm leading-relaxed text-[#7A776F]">
+                <p className="mt-2 text-sm leading-relaxed text-[#2e2a26]">
                   {work.description}
                 </p>
                 {work.href.startsWith('http') ? (

@@ -18,10 +18,10 @@ export default function RequestPage() {
           <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
             Begin a Conversation
           </h1>
-          <p className="mt-4 text-base text-[#5A5852] sm:text-lg">
+          <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
             A short assessment to determine fit for a time-bound private intervention.
           </p>
-          <p className="mt-4 text-sm text-[#7A776F]">
+          <p className="mt-4 text-sm text-[#2e2a26]">
             Referral-based private practice · Limited openings
           </p>
         </div>

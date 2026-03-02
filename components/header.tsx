@@ -55,7 +55,7 @@ export function Header() {
                 'relative text-sm font-medium transition-colors hover:text-foreground',
                 pathname === item.href
                   ? 'text-foreground after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground/40'
-                  : 'text-[#5A5852]'
+                  : 'text-[#2e2a26]'
               )}
             >
               {item.label}

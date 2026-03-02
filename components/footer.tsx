@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-[rgba(0,0,0,0.08)] bg-background">
       <div className="mx-auto max-w-6xl px-6 py-12">
         {/* Tagline */}
-        <p className="text-center text-sm text-[#7A776F]">
+        <p className="text-center text-sm text-[#2e2a26]">
           Referral-based private practice · Limited openings
         </p>
 
@@ -26,19 +26,19 @@ export function Footer() {
 
         {/* Copyright + Links */}
         <div className="flex flex-col items-center gap-4 text-center md:flex-row md:justify-between md:text-left">
-          <p className="text-sm text-[#5A5852]">
+          <p className="text-sm text-[#2e2a26]">
             &copy; {currentYear} Chava Floryn
           </p>
           <nav className="flex items-center gap-6" aria-label="Footer navigation">
             <Link
               href="/privacy"
-              className="text-sm text-[#5A5852] transition-colors hover:text-foreground"
+              className="text-sm text-[#2e2a26] transition-colors hover:text-foreground"
             >
               Privacy
             </Link>
             <Link
               href="/terms"
-              className="text-sm text-[#5A5852] transition-colors hover:text-foreground"
+              className="text-sm text-[#2e2a26] transition-colors hover:text-foreground"
             >
               Terms
             </Link>
