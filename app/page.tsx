@@ -104,7 +104,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-[#1A1D24] text-white">
+      <section className="bg-[#4A4843] text-white">
         {/* Top bar: Logo */}
         <div className="flex justify-center px-6 pt-10 pb-6 md:pt-14 md:pb-8">
           <Image
