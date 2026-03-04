@@ -62,7 +62,7 @@ export default function PrivacyPage() {
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#2e2a26]">
               For questions about this privacy policy or to request deletion of your data, please contact:{' '}
-              <a href="mailto:privacy@chavafloryn.com" className="text-primary hover:text-[#5C6D7E] transition-colors">
+              <a href="mailto:privacy@chavafloryn.com" className="text-primary hover:text-[#5a5550] transition-colors">
                 privacy@chavafloryn.com
               </a>
             </p>
