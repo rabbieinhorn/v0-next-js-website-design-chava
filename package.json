@@ -52,6 +52,7 @@
     "react-day-picker": "latest",
     "react-dom": "19.2.0",
     "react-hook-form": "latest",
+    "resend": "latest",
     "react-resizable-panels": "latest",
     "recharts": "latest",
     "sonner": "latest",

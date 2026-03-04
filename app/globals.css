@@ -13,8 +13,8 @@
   --card-foreground: #3B3A36;
   --popover: #FBF9F6;
   --popover-foreground: #3B3A36;
-  /* Muted slate-blue accent */
-  --primary: #6B7C8E;
+  /* Warm dark brown-gray accent */
+  --primary: #4A4843;
   --primary-foreground: #FFFFFF;
   /* Secondary surfaces - subtle contrast blocks */
   --secondary: #F1ECE4;
@@ -29,21 +29,21 @@
   /* Subtle cream-mode borders */
   --border: rgba(0, 0, 0, 0.08);
   --input: rgba(0, 0, 0, 0.08);
-  --ring: #6B7C8E;
-  --chart-1: #6B7C8E;
-  --chart-2: #5C6D7E;
+  --ring: #4A4843;
+  --chart-1: #4A4843;
+  --chart-2: #5a5550;
   --chart-3: #7A776F;
   --chart-4: #5A5852;
   --chart-5: #3B3A36;
   --radius: 0.375rem;
   --sidebar: #F7F4EF;
   --sidebar-foreground: #3B3A36;
-  --sidebar-primary: #6B7C8E;
+  --sidebar-primary: #4A4843;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #F1ECE4;
   --sidebar-accent-foreground: #3B3A36;
   --sidebar-border: rgba(0, 0, 0, 0.08);
-  --sidebar-ring: #6B7C8E;
+  --sidebar-ring: #4A4843;
 }
 
 @theme inline {

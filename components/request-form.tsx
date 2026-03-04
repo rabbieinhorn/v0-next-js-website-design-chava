@@ -77,9 +77,30 @@ export function RequestForm() {
     },
   })
 
-  function onSubmit(data: FormValues) {
-    console.log('Form submitted:', data)
-    setIsSubmitted(true)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
+
+  async function onSubmit(data: FormValues) {
+    setIsSubmitting(true)
+    setSubmitError(null)
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send request')
+      }
+
+      setIsSubmitted(true)
+    } catch {
+      setSubmitError('Something went wrong. Please try again or email directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -361,8 +382,12 @@ export function RequestForm() {
           </p>
         </div>
 
-        <Button type="submit" size="lg" className="w-full">
-          Submit Request
+        {submitError && (
+          <p className="text-sm text-red-600 text-center">{submitError}</p>
+        )}
+
+        <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Submit Request'}
         </Button>
       </form>
     </Form>
