@@ -161,7 +161,7 @@ export default function HomePage() {
         </div>
 
         {/* Ambient detail */}
-        <p className="absolute bottom-7 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45" aria-hidden="true">
+        <p className="absolute bottom-3 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45" aria-hidden="true">
           Available via Zoom
         </p>
       </section>
