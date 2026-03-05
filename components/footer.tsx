@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-[rgba(0,0,0,0.08)] bg-background">
-      <div className="mx-auto max-w-6xl px-6 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
         {/* Tagline */}
         <p className="text-center text-sm text-[#2e2a26]">
           Referral-based private practice · Limited openings

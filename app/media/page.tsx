@@ -42,9 +42,9 @@ export default function MediaPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-4 py-16 sm:px-6 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Media
           </h1>
           <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
@@ -56,9 +56,9 @@ export default function MediaPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Book */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
+          <h2 className="font-serif text-2xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
             Book
           </h2>
           <div className="mt-8 rounded-2xl border border-[rgba(0,0,0,0.08)] bg-card p-6">
@@ -90,17 +90,17 @@ export default function MediaPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Podcast */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
+          <h2 className="font-serif text-2xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
             Selected Podcast Episodes
           </h2>
           <ul className="mt-8 divide-y divide-[rgba(0,0,0,0.08)]">
             {podcastEpisodes.map((episode) => (
-              <li key={episode.title} className="flex items-start justify-between gap-4 py-4">
+              <li key={episode.title} className="flex flex-col gap-2 py-4 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                 <div>
                   <p className="font-medium text-foreground">{episode.title}</p>
-                  <p className="mt-1 text-[13px] text-[#2e2a26]">{episode.description}</p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-[#2e2a26]">{episode.description}</p>
                 </div>
                 <a
                   href={episode.href}
@@ -120,9 +120,9 @@ export default function MediaPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Video */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
+          <h2 className="font-serif text-2xl font-medium tracking-tight text-foreground sm:text-4xl uppercase tracking-wide">
             Video
           </h2>
           <p className="mt-4 text-[13px] leading-[1.7] text-[#2e2a26]">
@@ -176,7 +176,7 @@ export default function MediaPage() {
       </section>
 
       {/* Callout */}
-      <section className="px-6 pb-20 md:pb-28">
+      <section className="px-4 pb-16 sm:px-6 md:pb-28">
         <div className="mx-auto max-w-3xl">
           <Alert className="border-[rgba(0,0,0,0.08)] bg-card">
             <Info className="h-4 w-4 text-muted-foreground" />

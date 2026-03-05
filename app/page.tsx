@@ -115,11 +115,11 @@ export default function HomePage() {
                 <p className="font-serif text-base sm:text-lg text-white/85 italic mb-3 md:mb-4">
                   Irreversible Decisions Require Internal Stability.
                 </p>
-                <h1 className="font-serif text-[2.75rem] leading-[0.9] sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-white uppercase">
+                <h1 className="font-serif text-4xl leading-[0.9] sm:text-6xl md:text-8xl lg:text-9xl font-light tracking-tight text-white uppercase">
                   Chava<br />Floryn
                 </h1>
               </div>
-              <div className="relative aspect-[4/5] w-full max-w-[220px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0 isolate">
+              <div className="relative aspect-[4/5] w-full max-w-[180px] sm:max-w-[280px] md:max-w-[320px] overflow-hidden shrink-0 isolate">
                 <Image
                   src="/images/hero-portrait.jpg"
                   alt="Chava Floryn, private practice therapist, seated in white suit"
@@ -135,7 +135,7 @@ export default function HomePage() {
         {/* Description + CTA area */}
         <div className="px-5 py-10 sm:px-6 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="font-serif text-lg sm:text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/95">
+            <p className="font-serif text-base sm:text-xl md:text-2xl lg:text-[1.7rem] leading-relaxed text-white/95">
               Chava works privately with high-performing leaders at strategic inflection points — stabilizing decision-making under pressure through compressed, high-intensity intervention.
             </p>
 
@@ -144,7 +144,7 @@ export default function HomePage() {
               <Link
                 href="/request"
                 aria-label="Begin a conversation with Chava Floryn"
-                className="inline-block rounded-[3px] bg-[#f0ece4] px-10 py-4 font-serif text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4] dark-focus-ring"
+                className="inline-block rounded-[3px] bg-[#f0ece4] px-6 py-3 sm:px-10 sm:py-4 font-serif text-[11px] sm:text-[13px] font-medium uppercase tracking-[0.2em] text-[#2e2b28] transition-colors hover:bg-[#2e2b28] hover:text-[#f0ece4] dark-focus-ring"
               >
                 Begin a Conversation
               </Link>
@@ -161,13 +161,13 @@ export default function HomePage() {
         </div>
 
         {/* Ambient detail */}
-        <p className="absolute bottom-3 left-8 font-serif text-[10px] uppercase tracking-[0.25em] text-white/45" aria-hidden="true">
+        <p className="absolute bottom-3 left-5 sm:left-8 font-serif text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-white/45" aria-hidden="true">
           Available via Zoom
         </p>
       </section>
 
       {/* When this is the right time */}
-      <section className="px-5 pt-12 pb-12 sm:px-6 md:pt-24 md:pb-24">
+      <section className="px-4 pt-10 pb-10 sm:px-6 md:pt-24 md:pb-24">
         <div className="mx-auto max-w-5xl">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             When this is the right time
@@ -203,8 +203,8 @@ export default function HomePage() {
       </div>
 
       {/* What changes in four weeks */}
-      <section className="px-5 py-12 sm:px-6 md:py-24">
-        <div className="dark-focus mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-5 py-8 sm:px-10 md:px-12 md:py-12">
+      <section className="px-4 py-10 sm:px-6 md:py-24">
+        <div className="dark-focus mx-auto max-w-5xl rounded-2xl border border-[rgba(255,255,255,0.12)] bg-primary px-4 py-6 sm:px-10 sm:py-8 md:px-12 md:py-12">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-primary-foreground sm:text-4xl md:text-[2.5rem] text-center">
             What changes in four weeks
           </h2>
@@ -235,7 +235,7 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* The Engagement Arc */}
-      <section className="px-5 py-12 sm:px-6 md:py-24">
+      <section className="px-4 py-10 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             The Engagement Arc
@@ -246,7 +246,7 @@ export default function HomePage() {
             
             <div className="space-y-10">
               {timelineSteps.map((step, index) => (
-                <div key={step.step} className="relative flex items-start gap-8 pl-12">
+                <div key={step.step} className="relative flex items-start gap-5 sm:gap-8 pl-10 sm:pl-12">
                   {/* Step number aligned to the line */}
                   <div className="absolute left-0 flex h-8 w-8 items-center justify-center">
                     <span className="font-mono text-xs font-medium text-[#2e2a26]">
@@ -269,11 +269,11 @@ export default function HomePage() {
       </section>
 
       {/* A private practice — with atmospheric interior image */}
-      <section className="px-5 py-12 sm:px-6 md:py-24">
+      <section className="px-4 py-10 sm:px-6 md:py-24">
         <div className="mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
+          <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-12">
             {/* Left: atmospheric image */}
-            <div className="relative h-[280px] md:h-[360px] w-full md:w-[45%] shrink-0 overflow-hidden rounded-xl">
+            <div className="relative h-[220px] sm:h-[280px] md:h-[360px] w-full md:w-[45%] shrink-0 overflow-hidden rounded-xl">
               <Image
                 src="/images/atmosphere-interior.jpg"
                 alt=""
@@ -307,7 +307,7 @@ export default function HomePage() {
       <div className="mx-auto w-16 border-t border-border" />
 
       {/* Selected work */}
-      <section className="relative px-5 py-12 sm:px-6 md:py-24 overflow-hidden">
+      <section className="relative px-4 py-10 sm:px-6 md:py-24 overflow-hidden">
         {/* Subtle paper grain texture background */}
         <div className="absolute inset-0 opacity-[0.04]">
           <Image
@@ -322,7 +322,7 @@ export default function HomePage() {
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Selected work
           </h2>
-          <div className="mt-8 md:mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-8 md:mt-12 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
             {selectedWork.map((work) => (
               <div key={work.title} className="flex flex-col">
                 {/* Thumbnail */}
@@ -396,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA band */}
-      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-5 py-14 sm:px-6 md:py-28 lg:py-32">
+      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-4 py-12 sm:px-6 md:py-28 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-balance">
             If you've outgrown the pattern, you don't need more information, you need intervention.

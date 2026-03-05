@@ -63,9 +63,9 @@ export default function PrivateWorkPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-4 py-16 sm:px-6 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-serif text-2xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Performance Strategy for Business Leaders
           </h1>
           <p className="mt-6 text-base leading-relaxed text-[#2e2a26] sm:text-lg">
@@ -85,7 +85,7 @@ export default function PrivateWorkPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Offer Cards */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-8 md:grid-cols-2">
             {/* Decision Stabilization Intensive */}
@@ -142,7 +142,7 @@ export default function PrivateWorkPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Who this is for */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Who this is for
@@ -161,7 +161,7 @@ export default function PrivateWorkPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Who this is not for */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Who this is not for
@@ -186,7 +186,7 @@ export default function PrivateWorkPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* What the process feels like */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-2xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             What the process feels like
@@ -211,7 +211,7 @@ export default function PrivateWorkPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* FAQ */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-2xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Questions
@@ -232,7 +232,7 @@ export default function PrivateWorkPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-6 py-20 md:py-28">
+      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-4 py-14 sm:px-6 md:py-28">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
             Begin the process

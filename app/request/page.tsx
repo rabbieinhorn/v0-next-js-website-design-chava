@@ -13,9 +13,9 @@ export default function RequestPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-4 py-16 sm:px-6 md:py-32">
         <div className="mx-auto max-w-2xl text-center">
-          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
+          <h1 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
             Begin a Conversation
           </h1>
           <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
@@ -30,14 +30,14 @@ export default function RequestPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Form */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-xl">
           <RequestForm />
         </div>
       </section>
 
       {/* Not therapy callout */}
-      <section className="px-6 pb-12">
+      <section className="px-4 pb-10 sm:px-6">
         <div className="mx-auto max-w-xl">
           <Alert className="border-[rgba(0,0,0,0.08)] bg-card">
             <Info className="h-4 w-4 text-muted-foreground" />
@@ -50,7 +50,7 @@ export default function RequestPage() {
       </section>
 
       {/* Emergency line */}
-      <section className="px-6 pb-20 md:pb-28">
+      <section className="px-4 pb-14 sm:px-6 md:pb-28">
         <div className="mx-auto max-w-xl text-center">
           <p className="text-xs text-muted-foreground">
             If you're experiencing an emergency, contact local emergency services.

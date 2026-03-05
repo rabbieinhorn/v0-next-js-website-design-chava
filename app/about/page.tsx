@@ -40,11 +40,11 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="px-6 py-24 md:py-32">
+      <section className="px-4 py-16 sm:px-6 md:py-32">
         <div className="mx-auto max-w-5xl">
-          <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
             <div>
-              <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
+              <h1 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-5xl md:text-6xl">
                 About Chava
               </h1>
               <p className="mt-4 text-base text-[#2e2a26] sm:text-lg">
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Bio */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-2xl">
           <p className="text-base leading-relaxed text-[#2e2a26] sm:text-lg sm:leading-relaxed">
             Chava Floryn is a confidential transformational performance strategist to ultra-high-net-worth founders, CEOs, and senior leaders navigating moments of significant personal, professional, or existential inflection. With over 25 years as a community leader and formerly the Senior Wellness Advisor at Centner Wellness Center, she has worked with thousands of people in her career. Her work is centered on stabilizing the internal operating system, interrupting entrenched patterns, regulating pressure at the nervous-system level, and restoring executive clarity when the cost of misalignment is high.
@@ -83,7 +83,7 @@ export default function AboutPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Principles */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-4xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Principles
@@ -109,7 +109,7 @@ export default function AboutPage() {
       <Separator className="mx-auto w-16 bg-[rgba(0,0,0,0.08)]" />
 
       {/* Selected Work */}
-      <section className="px-6 py-16 md:py-24">
+      <section className="px-4 py-12 sm:px-6 md:py-24">
         <div className="mx-auto max-w-2xl">
           <h2 className="font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl text-center">
             Selected Work
@@ -134,7 +134,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-6 py-20 md:py-28">
+      <section className="border-t border-[rgba(0,0,0,0.08)] bg-secondary px-4 py-14 sm:px-6 md:py-28">
         <div className="mx-auto max-w-2xl text-center">
           <Button asChild size="lg">
             <Link href="/request">Request Consideration</Link>
