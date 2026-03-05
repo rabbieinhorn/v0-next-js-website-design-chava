@@ -345,12 +345,12 @@ export default function HomePage() {
                     </div>
                   </div>
                 ) : (
-                  <div className={`${work.aspectRatio} w-full rounded-xl border border-[#d9d4cc] bg-[#f3f0ea] overflow-hidden flex items-center justify-center gap-1`}>
-                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '12px' }} />
-                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '20px' }} />
-                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '28px' }} />
-                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '20px' }} />
-                    <span className="inline-block w-[1.5px] rounded-full bg-[#5a5550]/50" style={{ height: '12px' }} />
+                  <div className={`${work.aspectRatio} w-full rounded-xl overflow-hidden`}>
+                    <img
+                      src="/images/nurture-series-podcast.jpg"
+                      alt="The Nurture Series Podcast with Chava Floryn"
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                 )}
                 <h3 className="mt-4 font-serif text-lg font-medium text-foreground uppercase tracking-wide">
