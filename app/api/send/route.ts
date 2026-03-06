@@ -103,13 +103,11 @@ export async function POST(request: Request) {
     })
 
     if (error) {
-      console.log('[v0] Resend error:', error)
       return NextResponse.json({ error: error.message }, { status: 400 })
     }
 
     return NextResponse.json({ success: true })
-  } catch (err) {
-    console.log('[v0] Caught exception:', err)
+  } catch {
     return NextResponse.json(
       { error: 'Failed to send email' },
       { status: 500 }
