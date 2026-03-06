@@ -4,7 +4,17 @@ import { NextResponse } from 'next/server'
 export const dynamic = 'force-dynamic'
 
 export async function POST(request: Request) {
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const apiKey = process.env.RESEND_API_KEY
+  
+  if (!apiKey) {
+    console.log('[v0] RESEND_API_KEY is not set. Available env vars:', Object.keys(process.env).filter(k => k.includes('RESEND') || k.includes('API')))
+    return NextResponse.json(
+      { error: 'Email service not configured. Please contact the site administrator.' },
+      { status: 500 }
+    )
+  }
+  
+  const resend = new Resend(apiKey)
   try {
     const body = await request.json()
 
