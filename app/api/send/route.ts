@@ -1,22 +1,29 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-// Force rebuild: 2026-03-05
+// Updated: Force full rebuild 2026-03-05-v2
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 
+const inflectionLabels: Record<string, string> = {
+  leadership: 'Leadership transition / role change',
+  relationship: 'Relationship / family decision',
+  business: 'Business scale / exit / high-stakes decision',
+  burnout: 'Burnout / chronic stress pattern',
+  other: 'Other',
+}
+
 export async function POST(request: Request) {
+  // Check for API key first
   const apiKey = process.env.RESEND_API_KEY
   
   if (!apiKey) {
-    console.log('[v0] RESEND_API_KEY is not set. Available env vars:', Object.keys(process.env).filter(k => k.includes('RESEND') || k.includes('API')))
     return NextResponse.json(
-      { error: 'Email service not configured. Please contact the site administrator.' },
+      { error: 'Email service not configured. RESEND_API_KEY is missing.' },
       { status: 500 }
     )
   }
-  
-  const resend = new Resend(apiKey)
+
   try {
     const body = await request.json()
 
@@ -34,13 +41,7 @@ export async function POST(request: Request) {
       referralSource,
     } = body
 
-    const inflectionLabels: Record<string, string> = {
-      leadership: 'Leadership transition / role change',
-      relationship: 'Relationship / family decision',
-      business: 'Business scale / exit / high-stakes decision',
-      burnout: 'Burnout / chronic stress pattern',
-      other: 'Other',
-    }
+    const resend = new Resend(apiKey)
 
     const { error } = await resend.emails.send({
       from: 'Chava Floryn Website <onboarding@resend.dev>',
@@ -119,9 +120,10 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ success: true })
-  } catch {
+  } catch (err) {
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error'
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: `Failed to send email: ${errorMessage}` },
       { status: 500 }
     )
   }
