@@ -1,7 +1,9 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
+// Force rebuild: 2026-03-05
 export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY
