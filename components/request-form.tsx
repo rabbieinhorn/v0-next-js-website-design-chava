@@ -74,6 +74,9 @@ export function RequestForm() {
       urgentDecision: '',
       repeatingPattern: '',
       referralSource: '',
+      budgetAcknowledgement: false as unknown as true,
+      psychiatristCare: undefined,
+      willingToPractice: undefined,
     },
   })
 
